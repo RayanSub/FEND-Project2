@@ -153,8 +153,7 @@ function moveCounter() {
 /*checks the number of moves to update the star rating 
   8 moves and below is three stars
   9 to 16 is two stars
-  17 to 24 is one star
-  25 and above is 0 stars.
+  17 and above is 1 star.
 */
 function starRating() {
 
@@ -170,11 +169,6 @@ function starRating() {
     if(m === 17){
         stars[1].classList.remove(".fa-star");
         stars[1].classList.add("fa-star-o");
-    }
-
-    if(m === 25){
-        stars[0].classList.remove(".fa-star");
-        stars[0].classList.add("fa-star-o");
     }
 }
 
